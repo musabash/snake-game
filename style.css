@@ -1,3 +1,9 @@
+
+body {
+  align-items: center;
+  max-width: 500px;
+}
+
 h1 {
     text-align: center;
     color: rgba(240, 17, 17, 0.74);
@@ -5,17 +11,14 @@ h1 {
     border-radius: .6em;
 }
 
-body {
-    align-items: center;
-    max-width: 400px;
-}
-
 h2 {
     margin: 1em;
 }
 
 .grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    grid-template-rows: repeat(10, 20px);
     flex-flow: row wrap;
     height: 200px;
     width: 200px;
@@ -37,6 +40,7 @@ button {
 .container {
     display: flex;
     flex-direction: row;
+    
     justify-content: space-between;
     background: lightgrey;
     padding: 2em 2em 2em 0;
